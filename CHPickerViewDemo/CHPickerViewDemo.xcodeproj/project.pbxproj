@@ -221,9 +221,6 @@
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Seamus;
 				TargetAttributes = {
-					F13E245618714D68002A95FF = {
-						DevelopmentTeam = 4N8FASSMJ3;
-					};
 					F13E247718714D68002A95FF = {
 						TestTargetID = F13E245618714D68002A95FF;
 					};
