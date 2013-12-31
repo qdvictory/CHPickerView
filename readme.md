@@ -32,6 +32,6 @@ or
         
 you can see more in the demo.
 
-<img width=50% src="preview.png">
+<img width=50% src="preview.gif">
 
 more info: [go to my blog](http://minroad.com)
