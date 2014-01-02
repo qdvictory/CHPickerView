@@ -24,6 +24,10 @@
     return self;
 }
 
+- (NSUInteger)currentIndex
+{
+    return [pick currentIndex];
+}
 
 #pragma mark -
 // Only override drawRect: if you perform custom drawing.

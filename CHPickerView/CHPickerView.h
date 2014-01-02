@@ -20,6 +20,7 @@
     CHPickerDirection direction;
 
 }
+- (NSUInteger)currentIndex;
 @property (assign,nonatomic) id <CHPickerProtocol> delegate;
 
 @property (assign,nonatomic) CHPickerDirection direction;//direction default:CHPickerHorizontalDirection
