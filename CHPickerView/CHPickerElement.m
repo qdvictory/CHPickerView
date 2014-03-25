@@ -203,7 +203,7 @@
     }
     
     UILabel *lab = [[UILabel alloc] initWithFrame:frame];
-//    lab.backgroundColor = [UIColor grayColor];
+    lab.backgroundColor = [UIColor clearColor];
     lab.userInteractionEnabled = NO;
     if (self.labelTextAlignment) {
         lab.textAlignment = self.labelTextAlignment;
