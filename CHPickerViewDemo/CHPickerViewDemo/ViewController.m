@@ -36,7 +36,11 @@
     {
         CHPickerElement *vv = [[CHPickerElement alloc] initWithFrame:CGRectMake(250, 50, 30, 130)];
         vv.backgroundColor = [UIColor greenColor];
-        vv.sourceArray = @[@"0",@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12",@"13",@"14",@"15"];
+        NSMutableArray *a = [[NSMutableArray alloc] init];
+        for (int i = 0; i < 60; i++) {
+            [a addObject:[NSString stringWithFormat:@"%d",i]];
+        }
+        vv.sourceArray = a;
         [self.view addSubview:vv];
     }
     
@@ -69,13 +73,18 @@
         vv.pickerLabelTextAlignment = NSTextAlignmentCenter;
         vv.maskBackgroundColor = [UIColor greenColor];
         vv.pickerBackgroundColor = [UIColor grayColor];
-        vv.maskLabelFont = [UIFont systemFontOfSize:30];
+        vv.maskLabelFont = [UIFont systemFontOfSize:20];
         vv.maskLabelTextAlignment = NSTextAlignmentCenter;
         vv.maskAtIndex = 2;
         vv.pickerStartIndex = -2;
         vv.delegate = self;
         vv.currentPointOffset = CGPointMake(vv.contentHeight*2,0);
-        vv.sourceArray = @[@"0",@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12",@"13",@"14",@"15"];
+        NSMutableArray *a = [[NSMutableArray alloc] init];
+        for (int i = 0; i < 60; i++) {
+            [a addObject:[NSString stringWithFormat:@"%d",i]];
+        }
+        vv.maxScrollHeight = 10000;//if source array too long, set large number to maxScrollHeight
+        vv.sourceArray = a;
         [self.view addSubview:vv];
     }
     
