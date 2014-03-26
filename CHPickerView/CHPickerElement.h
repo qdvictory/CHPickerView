@@ -64,4 +64,6 @@ typedef enum direction
 
 @property (assign,nonatomic) CGPoint currentPointOffset;//calculate selected index offset from CGPointZero.
 @property (assign,nonatomic) NSUInteger currentIndex;//selected index
+
+@property (assign,nonatomic) float maxScrollHeight;//content max height
 @end

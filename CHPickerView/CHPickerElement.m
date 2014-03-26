@@ -12,6 +12,7 @@
 @implementation CHPickerElement
 @synthesize direction;
 @synthesize delegate;
+@synthesize maxScrollHeight = _maxscrollheight;
 
 - (id)initWithFrame:(CGRect)frame
 {

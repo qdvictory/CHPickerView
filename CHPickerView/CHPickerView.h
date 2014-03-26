@@ -42,4 +42,5 @@
 @property (assign,nonatomic) BOOL onTransform;//show transform or not. Default:NO
 @property (assign,nonatomic) UIColor *pickerBackgroundColor;//picker background color
 @property (assign,nonatomic) UIColor *maskBackgroundColor;//top picker background color
+@property (assign,nonatomic) float maxScrollHeight;//scroll content max height
 @end

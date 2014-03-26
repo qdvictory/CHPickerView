@@ -85,6 +85,9 @@
         pick.currentPointOffset = self.currentPointOffset;
     }
     
+    if (self.maxScrollHeight) {
+        pick.maxScrollHeight = mask.maxScrollHeight = self.maxScrollHeight;
+    }
     
     pick.onTransform = self.onTransform;
     [mask setPagingEnabled:YES];
